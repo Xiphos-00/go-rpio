@@ -24,9 +24,9 @@ var (
 	SpiMapError = errors.New("SPI registers not mapped correctly - are you root?")
 )
 
-// Sets all pins of given SPI device to SPI mode
+// Sets all pins of given SPI device to SPI mode (alt function mode)
 //  dev\pin | CE0 | CE1 | CE2 | SCLK | MOSI | MISO |
-//  Spi0    |   7 |   8 |   - |    9 |   10 |   11 |
+//  Spi0    |   8 |   7 |   - |   11 |   10 |    9 |
 //  Spi1    |  16 |  17 |  18 |   19 |   20 |   21 |
 //  Spi2    |  40 |  41 |  42 |   43 |   44 |   45 |
 //
